@@ -18,6 +18,7 @@ public class Main {
                 ArrayList<Long> tempList = phoneBookTMap.get(strArr[0]);
                 tempList.add(Long.valueOf(strArr[1]));
                 phoneBookTMap.put(strArr[0], tempList);
+//                phoneBookTMap.put(strArr[0], phoneBookTMap.get(strArr[0]).add(Long.parseLong(strArr[1])));
             } else phoneBookTMap.put(strArr[0], new ArrayList<>(Arrays.asList(Long.parseLong(strArr[1]))));
         }
         br.close();
